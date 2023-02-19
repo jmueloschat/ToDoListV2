@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+button {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 0.2rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #ffff;
+}
+
+input {
+    display: flex;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.2rem;   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;    
+    max-width: 450px;
+    margin: 3rem auto;
+    border: 2px solid #747070;
+    border-radius: 10px;
+}
+
+.form-control{
+    display: flex;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.7rem;    
+    padding: 0.7rem;    
+    border-bottom: 1px solid #333;
+}
+
+.todo-container header {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.todo-item {
+    display: flex;
+    color: #102f5e;
+    margin: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid;
+    padding: 0.1rem;    
+}
+
+.todo-item h3{
+    width: 80%;    
+    margin: 0.5rem;
+}
+
+.todo-item-add {
+    display: block;   
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.todo-item-btn-check,
+.todo-item-btn-pen,
+.todo-item-btn-xmark {
+    font-size: 1rem;
+    margin: 0.1rem;
+    padding: 0.5rem;
+}
+
+.todo-item-btn-check i,
+.todo-item-btn-pen i,
+.todo-item-btn-xmark i {
+    color: #395169;
+    font-weight: bold;
+    pointer-events: none; /*desabilitar eventos do ícone, portanto será no botão*/
+}
+
+.done {
+    background-color: #102f5e;
+}
+
+.done h3{
+    background-color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.hide {
+    display: none;
+}
